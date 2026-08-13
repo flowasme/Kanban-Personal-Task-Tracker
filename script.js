@@ -106,7 +106,6 @@ function changeStatus(taskId, newStatus) {
 }
 
 function deleteTask(taskId) {
-    // Find the task object by its ID, remove it from the array, then redraw the lists.
     const taskIndex = tasksObjectList.findIndex(task => task.id === taskId)
 
     if (taskIndex === -1) return
