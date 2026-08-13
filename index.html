@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logo.svg">
+        <title>Kanban</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.svg" id="logo-svg">
+            
+            <div id="brand-holder">
+                <h6 id="header-hook">Personal Task Tracker</h6>
+                <h1 id="header-app-name">KANBAN</h1>
+                <h4 id="header-app-banner">Plan tasks, move them through your workflow, and keep your progress saved in this browser.</h4>
+            </div>
+            
+        </header>
+
+        <main>
+            <section id="search-tools"></section>
+            <section id="task-creation-form">
+                <h1 id="form-title">Create Task</h1>
+                <form id="task-form" action="#">
+                    <div class="form-field">
+                        <label for="task-name">Task name</label>
+                        <input type="text" id="task-name" required placeholder="Unnamed Task...">
+                    </div>
+                    <div class="form-field">
+                        <label for="task-description">Task description</label>
+                        <input type="text" id="task-description" placeholder="Add your description here...">
+                    </div>
+                    <div class="form-field">
+                        <label for="task-date-time">Due date and time</label>
+                        <input type="datetime-local" id="task-date-time">
+                    </div>
+                    <button id="submit-button" type="submit">Add Task</button>
+                </form>
+            </section>
+            <section id="tasks-lists-container">
+                <div id="to-do-tasks-display-list" class="tasks-column">
+                    <h3 class="tasks-display-list-title">To-Do</h3>
+                    <div class="tasks-display-list-container" id="to-do-card-list"></div>
+                </div>
+                <div id="in-progress-tasks-display-list" class="tasks-column">
+                    <h3 class="tasks-display-list-title">In Progress</h3>
+                    <div class="tasks-display-list-container" id="in-progress-card-list"></div>
+                </div>
+                <div id="done-tasks-display-list" class="tasks-column">
+                    <h3 class="tasks-display-list-title">Done</h3>
+                    <div class="tasks-display-list-container" id="done-card-list"></div>
+                </div>
+            </section>
+        </main>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
